@@ -1,5 +1,5 @@
 import React from 'react';
-import render from 'react-dom';
+import { render } from 'react-dom';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 
 // App
@@ -10,8 +10,8 @@ render(
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={HomePage} />
+      <Route path="*" component={HomePage} />
     </Route>
-    <Route path="*" component={HomePage} />
   </Router>,
   document.getElementById('root'),
 );

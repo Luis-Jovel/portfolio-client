@@ -1,9 +1,8 @@
 import React from 'react';
 
 const Home = () => {
-  const styles = {};
   return (
-    <h1 style={styles}>
+    <h1>
       HomePage!
     </h1>
   );

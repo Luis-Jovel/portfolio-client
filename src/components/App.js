@@ -7,6 +7,6 @@ const App = ({ children }) => (
 );
 
 App.propTypes = {
-  children: React.propTypes.node,
+  children: React.PropTypes.node,
 };
 export default App;
